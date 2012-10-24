@@ -25,8 +25,7 @@ var WRInitTime=(new Date()).getTime();
 
 <div class="site">
   <div class="title">
-    <a href="/">�Ź�/Enc0d1n9</a>
-    <a class="extra" href="/">home</a>
+    <a href="http://enc0d1n9.github.com/Blog/">张桂东/Enc0d1n9</a>
   </div>
   
   {{ content }}
@@ -34,7 +33,7 @@ var WRInitTime=(new Date()).getTime();
   <div class="footer">
     <div class="contact">
       <p>
-        �Ź�<br />
+        张桂东<br />
         Employee of <a href="http://www.moretv.com.cn/">moretv</a><br />
         enc0d1n9@gmail.com
       </p>
