@@ -14,7 +14,7 @@ title: Enc0d1n9
   </ul>
 
   <h1>Thinking, Etc</h1>
-  <ul class="posts">
+  <ul class="Thinking">
 	<li><span>21 Nov 2012</span> &raquo; <a href="http://steveblank.com/tools-and-blogs-for-entrepreneurs/">Startup Tools by SteveBlank(综合Blog)</a></li>
 	<li><span>21 Nov 2012</span> &raquo; <a href="http://www.romanpichler.com/blog/">All Things Product Owner(综合Blog)</a></li>
 	<li><span>21 Nov 2012</span> &raquo; <a href="http://pmarchive.com/">The Pmarca Guide to Startups(综合Blog)</a></li>
@@ -24,7 +24,10 @@ title: Enc0d1n9
   </ul>
 
   <h1>Lifes</h1>
-  <ul class="posts">
-    <li><a href="http://weibo.com/da5le">Weibo Link:</a> A simple, Focused weibo/twitter place.</li>
+  <ul class="personals">
+	 {% for personal in site.personal %}
+      <li><span>{{ personal.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ personal.title }}</a></li>
+    {% endfor %}
+	  <li><a href="http://weibo.com/da5le">Weibo Link:</a> A simple, Focused weibo/twitter place.</li>
   </ul>
 </div>
