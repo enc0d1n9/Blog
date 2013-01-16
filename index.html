@@ -27,8 +27,8 @@ title: Enc0d1n9
   <ul class="personals">
 	  <li><a href="http://weibo.com/da5le">Weibo Link:</a> A simple, Focused weibo/twitter place.</li>
 	  
-	  {% for personal in site.personals %}
-      <li><span>{{ personal.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ personal.url }}">{{ personal.title }}</a></li>
+	  {% for per in site.personals %}
+      <li><span>{{ per.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ per.url }}">{{ per.title }}</a></li>
      {% endfor %}
 	  <li><a href="http://weibo.com/da5le">Weibo Link:</a> A simple, Focused weibo/twitter place.</li>
   </ul>
