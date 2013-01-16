@@ -25,9 +25,9 @@ title: Enc0d1n9
 
   <h1>Lifes</h1>
   <ul class="personals">
-	 {% for personal in site.personal %}
+	 {% for personal in site.personals %}
       <li><span>{{ personal.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ personal.url }}">{{ personal.title }}</a></li>
-    {% endfor %}
+     {% endfor %}
 	  <li><a href="http://weibo.com/da5le">Weibo Link:</a> A simple, Focused weibo/twitter place.</li>
   </ul>
 </div>
