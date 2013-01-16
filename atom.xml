@@ -27,7 +27,7 @@ layout: nil
 {% for personal in site.personals %}
  <entry>
    <title>{{ personal.title }}</title>
-   <link href="http://tom.preston-werner.com{{ post.url }}"/>
+   <link href="http://tom.preston-werner.com{{ personal.url }}"/>
    <updated>{{ personal.date | date_to_xmlschema }}</updated>
    <id>http://tom.preston-werner.com{{ personal.id }}</id>
    <content type="html">{{ personal.content | xml_escape }}</content>
