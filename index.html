@@ -25,8 +25,11 @@ title: Enc0d1n9
 
   <h1>Lifes</h1>
   <ul class="personals">
-      <li><span>15 Jan 2013</span> &raquo; <a href="http://enc0d1n9.github.com/Blog/%E6%97%85%E8%A1%8C%E6%97%A5%E8%AE%B0/2013/01/15/CES-Feeling-of-New-Year.html">2013美国CES行个人感知</a></li>
+      {% for post in site.personals %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
 	  <li><a href="http://weibo.com/da5le">Weibo Link:</a> A simple, Focused weibo/twitter place.</li>
 	  <li><a href="http://www.directorypatent.com/CN/200710038359ZZDOTZZ8.html">个人专利</a>适用于iptv的视频播放状态下的频道切换方法 </li>
+	  <li><a href="http://www.soopat.com/Patent/201530140937">个人专利</a>微鲸电视遥控器 </li>
   </ul>
 </div>
