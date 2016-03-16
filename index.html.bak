@@ -1,0 +1,35 @@
+---
+layout: default
+title: Enc0d1n9
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+	<li><span>21 Nov 2012</span> &raquo; <a href="http://blog.xdite.net/posts/2012/05/13/the-startup-owners-manual-02/">The Startup Owner's Manual 讀書心得:致命的九宗罪</a></li>
+	<li><span>24 Nov 2012</span> &raquo; <a href="http://www.leiphone.com/121123-chibop-old.html">如何抓住老年用户需求(转载并有微博评论)</a></li>
+  </ul>
+
+  <h1>Thinking, Etc</h1>
+  <ul class="Thinking">
+	<li><span>21 Nov 2012</span> &raquo; <a href="http://steveblank.com/tools-and-blogs-for-entrepreneurs/">Startup Tools by SteveBlank(综合Blog)</a></li>
+	<li><span>21 Nov 2012</span> &raquo; <a href="http://www.romanpichler.com/blog/">All Things Product Owner(综合Blog)</a></li>
+	<li><span>21 Nov 2012</span> &raquo; <a href="http://pmarchive.com/">The Pmarca Guide to Startups(综合Blog)</a></li>
+	<li><span>21 Nov 2012</span> &raquo; <a href="http://e145.stanford.edu/">The class examines the fundamentals of technology entrepreneurship as practiced in Silicon Valley(学习课程)</a></li>
+    <li><span>10 Dec 2004</span> &raquo; <a href="http://blog.csdn.net/da5le/article/details/211970">File: How develop streaming client based on live555/livemedia</a></li>
+	<li><span>08 Dec 2004</span> &raquo; <a href="http://blog.csdn.net/da5le/article/details/208857">What is PREROLL?</a></li>
+  </ul>
+
+  <h1>Lifes</h1>
+  <ul class="personals">
+      {% for post in site.personals %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+	  <li><a href="http://weibo.com/da5le">Weibo Link:</a> A simple, Focused weibo/twitter place.</li>
+	  <li><a href="http://www.directorypatent.com/CN/200710038359ZZDOTZZ8.html">个人专利</a>适用于iptv的视频播放状态下的频道切换方法 </li>
+	  <li><a href="http://www.soopat.com/Patent/201530140937">个人专利</a>微鲸电视遥控器 </li>
+  </ul>
+</div>
