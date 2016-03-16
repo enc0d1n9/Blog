@@ -25,8 +25,8 @@ title: Enc0d1n9
 
   <h1>Lifes</h1>
   <ul class="personals">
-      {% for post in site.personals %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% for post1 in site.personals %}
+          <li><span>{{ post1.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post1.url }}">{{ post1.title }}</a></li>
       {% endfor %}
 	  <li><a href="http://weibo.com/da5le">Weibo Link:</a> A simple, Focused weibo/twitter place.</li>
 	  <li><a href="http://www.directorypatent.com/CN/200710038359ZZDOTZZ8.html">个人专利</a>适用于iptv的视频播放状态下的频道切换方法 </li>
